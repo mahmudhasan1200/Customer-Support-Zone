@@ -263,6 +263,163 @@ function App() {
           </section>
         </div>
       </main>
+      <footer className="bg-black text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-zinc-900 w-full font-sans mt-20">
+        <div className="max-w-7xl mx-auto">
+          {/* --- TOP GRID SECTION --- */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 xl:gap-12 pb-10 justify-center items-center">
+            {/* Column 1: Brand & Description (Spans wider on desktop panels) */}
+            <div className="lg:col-span-2 flex flex-col gap-4">
+              <h2 className="text-xl font-bold tracking-tight text-white">
+                CS — Ticket System
+              </h2>
+              <p className="text-zinc-400 text-sm leading-relaxed max-w-sm">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+
+            {/* Column 2: Company */}
+            <div className="flex flex-col gap-3">
+              <h3 className="text-sm font-semibold tracking-wider uppercase text-white/90">
+                Company
+              </h3>
+              <ul className="flex flex-col gap-2.5 text-zinc-400 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Our Mission
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Contact Sales
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Services */}
+            <div className="flex flex-col gap-3">
+              <h3 className="text-sm font-semibold tracking-wider uppercase text-white/90">
+                Services
+              </h3>
+              <ul className="flex flex-col gap-2.5 text-zinc-400 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Products & Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Customer Stories
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Download Apps
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4: Information */}
+            <div className="flex flex-col gap-3">
+              <h3 className="text-sm font-semibold tracking-wider uppercase text-white/90">
+                Information
+              </h3>
+              <ul className="flex flex-col gap-2.5 text-zinc-400 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Join Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* --- MIDDLE SOCIAL RECTANGLE LIST --- */}
+            {/* Placed flexibly on bottom row area to preserve exact balance match */}
+            <div className="flex flex-col md:flex-row md:justify-end pt-6 gap-6">
+              <div className="flex flex-col gap-3">
+                <h3 className="text-sm font-semibold tracking-wider uppercase text-white/90 ">
+                  Social Links
+                </h3>
+                <ul className="flex flex-wrap gap-x-6 gap-y-3 text-zinc-400 text-sm">
+                  <li className="flex items-center gap-2 cursor-pointer hover:text-white transition-colors">
+                    <span className="w-5 h-5 rounded-full bg-zinc-800 flex items-center justify-center text-xs font-bold text-white">
+                      X
+                    </span>
+                    <span>@CS - Ticket System</span>
+                  </li>
+                  <li className="flex items-center gap-2 cursor-pointer hover:text-white transition-colors">
+                    <span className="w-5 h-5 rounded-full bg-zinc-800 flex items-center justify-center text-xs font-bold text-white">
+                      in
+                    </span>
+                    <span>@CS - Ticket System</span>
+                  </li>
+                  <li className="flex items-center gap-2 cursor-pointer hover:text-white transition-colors">
+                    <span className="w-5 h-5 rounded-full bg-zinc-800 flex items-center justify-center text-xs font-bold text-white">
+                      f
+                    </span>
+                    <span>@CS - Ticket System</span>
+                  </li>
+                  <li className="flex items-center gap-2 cursor-pointer hover:text-white transition-colors">
+                    <span className="w-5 h-5 text-zinc-400 flex items-center justify-center">
+                      ✉
+                    </span>
+                    <span>support@cst.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* --- BOTTOM RIGHTS ROW --- */}
+          <div className="mt-8 border-t border-zinc-800 pt-6 flex justify-center text-xs text-zinc-500">
+            <p>© 2026 CS — Ticket System. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
