@@ -4,6 +4,7 @@ import headerImg1 from "./assets/vector1.png";
 import Tickets from "./assets/Components/Tickets";
 import TaskStatus from "./assets/Components/TaskStatus";
 import ResolveTasks from "./assets/Components/ResolveTasks";
+import { ToastContainer, toast } from "react-toastify";
 function App() {
   // Fetching Tickets json data and Store it
   const [ticketsData, setTicketData] = useState([]);
@@ -22,7 +23,9 @@ function App() {
     const currentTasks = Array.isArray(selectedTasks) ? selectedTasks : [];
     const newSelectedTasks = [...currentTasks, ticket];
     setSelectedTask(newSelectedTasks);
+    toast.warn(`${ticket.id} added to task status`);
 
+    // Remove Tickets after Added Task Status
     const updatedTickets = ticketsData.filter(
       (ticketsData) => ticketsData.id !== ticket.id,
     );
@@ -35,6 +38,7 @@ function App() {
     const currentClikedTask = Array.isArray(clickedTask) ? clickedTask : [];
     const newClikedTask = [...currentClikedTask, task];
     setclicked(newClikedTask);
+    toast.success(`${task.id} Added in the Resolved Task`);
 
     // Update Task Status by removing the selected task
     const updatedSelectedTasks = selectedTasks.filter(
@@ -419,6 +423,7 @@ function App() {
             <p>© 2026 CS — Ticket System. All rights reserved.</p>
           </div>
         </div>
+        <ToastContainer />
       </footer>
     </div>
   );
